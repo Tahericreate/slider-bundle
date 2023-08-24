@@ -1,0 +1,40 @@
+
+{
+    "name": "tahericreate/slider-bundle",
+    "type": "contao-bundle",
+    "license": "LGPL-3.0-or-later",
+    "description": "Design your own Contao website in easy steps.",
+    "keywords": [
+		"contao",
+		"theme",
+		"website",
+		"configuration",
+		"design",
+		"ui",
+		"ux"
+	],    
+    "authors": [
+		{
+		  "name": "tahericreate",
+		  "email": "kassra@taheri-create.de",
+		  "homepage": "https://www.contao.in",
+		  "role": "Project Manager"
+		}
+	],
+	"version": "dev-main",
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "contao/core-bundle": "^4.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tahericreate\\SliderBundle\\": "src/"
+        }
+    },
+    "extra": {
+        "contao-manager-plugin": "Tahericreate\\SliderBundle\\ContaoManager\\Plugin"
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}

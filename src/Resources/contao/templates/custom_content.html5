@@ -1,0 +1,16 @@
+
+<div class="mod_slider_start">
+    <?php $objFileModel = \FilesModel::findByUuid($this->singleSRC); ?>
+    <?php if($this->singleSRC && $this->description): ?>
+        <img src="<?= $objFileModel->path ?>" alt="Image">
+    <?php else: ?>   
+    <?php if (!empty($this->singleSRC) && $objFileModel): ?>
+        <img src="<?= $objFileModel->path ?>" alt="Image">
+    <?php endif; ?> 
+    <?php if (!empty($this->description) ): ?>
+        <?= $this->description ?>
+    <?php endif; ?>
+    <?php endif; ?>
+</div>
+
+
